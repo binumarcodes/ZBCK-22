@@ -180,7 +180,7 @@ body {
 #home {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.123), #005eeb), url("../Zabib Profiles/Banner.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.123), #005eeb), url("Banner.jpg");
     background-size: cover;
     background-position: center;
     transition: .5s;
@@ -344,8 +344,9 @@ body {
     justify-content: center;
     transform: scale(0);
     position: fixed;
-    top: 15%;
-    right: -50%;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     transition: 0.5s;
 }
 
@@ -448,7 +449,6 @@ body {
 .card:nth-child(14) .profile img,
 .card:nth-child(18) .profile img,
 .card:nth-child(19) .profile img,
-.card:nth-child(23) .profile img,
 .card:nth-child(26) .profile img,
 .card:nth-child(27) .profile img,
 .card:nth-child(34) .profile img,
@@ -465,12 +465,14 @@ body {
 .card:nth-child(19) .profile img,
 .card:nth-child(20) .profile img,
 .card:nth-child(22) .profile img,
+.card:nth-child(23) .profile img,
 .card:nth-child(24) .profile img,
 .card:nth-child(25) .profile img,
 .card:nth-child(26) .profile img,
 .card:nth-child(28) .profile img,
 .card:nth-child(29) .profile img,
 .card:nth-child(32) .profile img,
+.card:nth-child(33) .profile img,
 .card:nth-child(37) .profile img,
 .card:nth-child(38) .profile img,
 .card:nth-child(39) .profile img,
@@ -484,15 +486,22 @@ body {
 .card:nth-child(2) .profile img,
 .card:nth-child(3) .profile img,
 .card:nth-child(5) .profile img,
-.card:nth-child(21) .profile img,
 .card:nth-child(30) .profile img,
 .card:nth-child(31) .profile img,
 .card:nth-child(36) .profile img,
-.card:nth-child(43) .profile img {
+.card:nth-child(43) .profile img,
+.card:nth-child(58) .profile img {
     margin-top: -100px;
 }
 
-.card:nth-child(47) .profile img {
+.card:nth-child(21) .profile img {
+    margin-top: -140px;
+}
+
+.card:nth-child(47) .profile img,
+.card:nth-child(56) .profile img,
+.card:nth-child(57) .profile img,
+.card:nth-child(60) .profile img {
     margin-top: -120px;
 }
 
@@ -523,7 +532,7 @@ body {
 .line, .line1 {
     padding: 5px;
     margin-bottom: 20px;
-    position: relative;
+    position: relative; 
 }
 .line1 {
     display: flex;
