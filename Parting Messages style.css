@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: #2e364a;
+}
+
+
+#loadig-screen {
+    width: 100%;
+    height: 100vh;
+    background: #ecf0f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.loading {
+    width: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loading span {
+    width: 32px;
+    height: 32px;
+    background: orangered;
+    margin: 4px;
+    animation: scale 1.5s linear infinite;
+}
+
+@keyframes scale {
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+.loading span:nth-child(1) {
+    border-radius: 50% 50% 0 50%;
+    background-color: #e64132;
+    transform-origin: bottom right;
+    animation-delay: .5s;
+}
+.loading span:nth-child(2) {
+    border-radius: 50% 50% 50% 0;
+    background-color: #4081ef;
+    transform-origin: bottom left;
+    animation-delay: 1s;
+}
+.loading span:nth-child(3) {
+    border-radius: 50% 0 50% 50%;
+    background-color: #31a452;
+    transform-origin: top right;
+    animation-delay: 1.5s;
+}
+.loading span:nth-child(4) {
+    border-radius: 0 50% 50% 50%;
+    background-color: #f6b801;
+    transform-origin: top left;
+    animation-delay: 1s;
+}
+
+#loadig-screen p {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translatex(-50%);
+    font-size: 12px;
+    text-align: center;
+    color: rgb(121, 121, 121);
+}
+
+
+/* Navbar */
+
+#sideNav {
+    width: 200px;
+    height: 100vh;
+    background-image: linear-gradient(navy, blue);
+    position: fixed;
+    top: 0;
+    right: -200px;
+    z-index: 2;
+    transition: right .5s;
+}
+#sideNav ul li {
+    list-style: none;
+    margin: 50px 20px;
+}
+#sideNav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#sideNav .games {
+    color: rgb(255, 208, 0);
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 600;
+    background-image: linear-gradient(to top left, navy, blue);
+    padding: 5px 8px;
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: inset 2px 2px 4px navy;
+    font-size: 37px;
+    }
+
+
+.toggle {
+    position: fixed;
+    top: 4%;
+    right: 4%;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    z-index: 90;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.08), -10px -10px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+.toggle span {
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background-color: navy;
+    border-radius: 3px;
+    transition: .5s;
+}
+.toggle span:nth-child(1) {
+    transform: translatey(-10px);
+    width: 13px;
+    left: 8px;
+}
+.toggle.active span:nth-child(1) {
+    width: 25px;
+    transform: rotate(45deg);
+    transition-delay: .132s;
+}
+.toggle span:nth-child(2) {
+    transform: translatey(10px);
+    width: 9px;
+    left: 8px;
+}
+.toggle.active span:nth-child(2) {
+    width: 25px;
+    transform: rotate(316deg);
+    transition-delay: .2s;
+}
+
+.toggle.active span:nth-child(3) {
+    transform: translatex(35px);
+}
+
+
+
+.timeline{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+h1 {
+    text-align: center;
+    color: rgb(255, 208, 0);
+    font-size: 30px;
+    margin-top: 40px;
+    margin-left: 20px;
+    font-family: 'Kaushan Script', sans-serif;
+}
+
+
+.container {
+    padding: 10px 50px;
+    width: 50%;
+    position: relative;
+    opacity: 0;
+    animation: movedown 1s linear forwards;
+}
+.container:nth-child(2) {
+    animation-delay: 1s;
+}
+.container:nth-child(3) {
+    animation-delay: 2s;
+}
+.container:nth-child(4) {
+    animation-delay: 3s;
+}
+.container:nth-child(5) {
+    animation-delay: 4s;
+}
+.container:nth-child(6) {
+    animation-delay: 5s;
+}
+.container:nth-child(7) {
+    animation-delay: 6s;
+}
+.container:nth-child(8) {
+    animation-delay: 7s;
+}
+.container:nth-child(9) {
+    animation-delay: 8s;
+}
+.container:nth-child(10) {
+    animation-delay: 9s;
+}
+.container:nth-child(11) {
+    animation-delay: 10s;
+}
+.container:nth-child(12) {
+    animation-delay: 11s;
+}
+.container:nth-child(13) {
+    animation-delay: 12s;
+}
+.container:nth-child(14) {
+    animation-delay: 13s;
+}
+.container:nth-child(15) {
+    animation-delay: 14s;
+}
+.container:nth-child(16) {
+    animation-delay: 15s;
+}
+.container:nth-child(17) {
+    animation-delay: 16s;
+}
+.container:nth-child(18) {
+    animation-delay: 17s;
+}
+.container:nth-child(19) {
+    animation-delay: 18s;
+}
+.container:nth-child(20) {
+    animation-delay: 19s;
+}
+.container:nth-child(21) {
+    animation-delay: 20s;
+}
+.container:nth-child(22) {
+    animation-delay: 21s;
+}
+.container:nth-child(23) {
+    animation-delay: 22s;
+}
+.container:nth-child(24) {
+    animation-delay: 23s;
+}
+.container:nth-child(25) {
+    animation-delay: 24s;
+}
+.container:nth-child(26) {
+    animation-delay: 25s;
+}
+.container:nth-child(27) {
+    animation-delay: 26s;
+}
+.container:nth-child(28) {
+    animation-delay: 27s;
+}
+
+@keyframes movedown {
+    0% {
+        opacity: 1;
+        transform: translatey(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translatey(0);
+    }
+}
+.textbox {
+    padding: 20px 30px;
+    background: #fff;
+    border-radius: 6px;
+    position: relative;
+    font-size: 15px;
+    max-height: 150px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.textbox::after {
+    content: '';
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(to bottom, transparent, lavender 90%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.partingMessages-more {
+    position: absolute;
+    bottom: 10px;
+    right: 10%;
+    color: navy;
+    z-index: 22;
+    font-size: 30px;
+    cursor: pointer;
+}
+input[type="radio"] {
+    display: none;
+}
+input[type="radio"]:checked + label + .textbox {
+    max-height: 500px;
+}
+input[type="radio"]:checked + label, input[type="radio"]:checked + label + .textbox::after {
+    display: none;
+}
+.left-container {
+    left: 0;
+}
+.right-container {
+    left: 50%;
+}
+.container img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    top: 32px;
+    right: -20px;
+    z-index: 10;
+}
+.right-container img {
+    left: -20px;
+}
+.timeline::after {
+    content: '';
+    width: 6px;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: slideDownLine 28s linear forwards;
+}
+@keyframes slideDownLine {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+
+.textbox h2 {
+    font-weight: 600;
+}
+.textbox small {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.left-container-arrow {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 28px;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #fff;
+    right: -15px;
+}
+.right-container-arrow {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 28px;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #fff;
+    left: -15px;
+}
+
+@media screen and (max-width: 600px) {
+.timeline {
+    margin: 50px auto;
+}
+.timeline::after {
+    left: 31px;
+}
+.container {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 25px;
+}
+.textbox {
+    font-size: 13px;
+}
+.textbox::after {
+background: linear-gradient(to bottom, transparent, lavender);
+}
+.textbox small {
+    margin-bottom: 10px;
+}
+.right-container {
+    left: 0;
+}
+.left-container img, .right-container img {
+    left: 10px;
+}
+.left-container-arrow, .right-container-arrow {
+    border-right: 15px solid #fff;
+    border-left: 0;
+    left: -15px;
+}
+}

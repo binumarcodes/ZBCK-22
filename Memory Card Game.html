@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="Memory Card Game style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <script defer src="App.js"></script>
+</head>
+<body>
+
+    <div id="loadig-screen">
+        <div class="loading">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <p>Developed By: Abdulrahman Bin Umar</p>
+    </div>
+
+
+    <nav id="sideNav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Parting Messages.html">Parting Massages</a></li>
+            <li><a href="Memories.html">Memories</a></li>
+            <li><a href="Promt Day.html">Promt Day</a></li>
+            <li><a href="Graduation Day.html">Graduation Day</a></li>
+        </ul>
+
+        <a href="Memory Card Game.html" class="games"><i class="fa fa-gamepad"></i></a>
+
+    </nav>
+
+    <div class="toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="gameWrapper">
+        <ul class="tickets">
+            <li class="ticket">
+                <div class="view front-view">
+                    <span class="material-icons">?</span>
+                </div>
+                <div class="view back-view">
+                    <img src="img 1.jpg">
+                </div>
+            </li>
+
+            <li class="ticket">
+                <div class="view front-view">
+                    <span class="material-icons">?</span>
+                </div>
+                <div class="view back-view">
+                    <img src="img 40.jpg">
+                </div>
+            </li>
+
+            <li class="ticket">
+                <div class="view front-view">
+                    <span class="material-icons">?</span>
+                </div>
+                <div class="view back-view">
+                    <img src="img 3.jpg">
+                </div>
+            </li>
+
+            <li class="ticket">
+                <div class="view front-view">
+                    <span class="material-icons">?</span>
+                </div>
+                <div class="view back-view">
+                    <img src="img 4.jpg">
+                </div>
+            </li>
+
+            <li class="ticket">
+                <div class="view front-view">
+                    <span class="material-icons">?</span>
+                </div>
+                <div class="view back-view">
+                    <img src="img 5.jpg">
+                </div>
+            </li>
+
+            <li class="ticket">
+                <div class="view front-view">
+                    <span class="material-icons">?</span>
+                </div>
+                <div class="view back-view">
+                    <img src="img 6.jpg">
+                </div>
+            </li>
+
+            <li class="ticket">
+                <div class="view front-view">
+                    <span class="material-icons">?</span>
+                </div>
+                <div class="view back-view">
+                    <img src="img 7.jpg">
+                </div>
+            </li>
+
+            <li class="ticket">
+                <div class="view front-view">
+                    <span class="material-icons">?</span>
+                </div>
+                <div class="view back-view">
+                    <img src="img 8.jpg">
+                </div>
+            </li>
+            <li class="ticket">
+                <div class="view front-view">
+                    <span class="material-icons">?</span>
+                </div>
+                <div class="view back-view">
+                    <img src="img 1.jpg">
+                </div>
+            </li>
+
+            <li class="ticket">
+                <div class="view front-view">
+                    <span class="material-icons">?</span>
+                </div>
+                <div class="view back-view">
+                    <img src="img 40.jpg">
+                </div>
+            </li>
+
+            <li class="ticket">
+                <div class="view front-view">
+                    <span class="material-icons">?</span>
+                </div>
+                <div class="view back-view">
+                    <img src="img 3.jpg">
+                </div>
+            </li>
+
+            <li class="ticket">
+                <div class="view front-view">
+                    <span class="material-icons">?</span>
+                </div>
+                <div class="view back-view">
+                    <img src="img 4.jpg">
+                </div>
+            </li>
+
+            <li class="ticket">
+                <div class="view front-view">
+                    <span class="material-icons">?</span>
+                </div>
+                <div class="view back-view">
+                    <img src="img 5.jpg">
+                </div>
+            </li>
+
+            <li class="ticket">
+                <div class="view front-view">
+                    <span class="material-icons">?</span>
+                </div>
+                <div class="view back-view">
+                    <img src="img 6.jpg">
+                </div>
+            </li>
+
+            <li class="ticket">
+                <div class="view front-view">
+                    <span class="material-icons">?</span>
+                </div>
+                <div class="view back-view">
+                    <img src="img 7.jpg">
+                </div>
+            </li>
+
+            <li class="ticket">
+                <div class="view front-view">
+                    <span class="material-icons">?</span>
+                </div>
+                <div class="view back-view">
+                    <img src="img 8.jpg">
+                </div>
+            </li>
+
+        </ul>
+    </div>
+
+    <div class="difficulty">
+        <a href="Memory Card Game.html">Easy</a>
+        <a href="Memory Card Game Hard.html">Hard</a>
+        </div>
+
+    <script>
+        const tickets = document.querySelectorAll('.ticket');
+
+        let matchTicket = 0;
+        let ticketOne, ticketTwo;
+        let disableDeck = false;
+
+        function flipTicket(e) {
+            let clickedTicket = e.target;
+            if (clickedTicket !== ticketOne && !disableDeck) {
+                clickedTicket.classList.add('flip');
+
+            if (!ticketOne) {
+                return (ticketOne = clickedTicket);
+            }
+            
+            ticketTwo = clickedTicket;
+            disableDeck = true;
+
+            let ticketOneImg = ticketOne.querySelector('img').src,
+                ticketTwoImg = ticketTwo.querySelector('img').src;
+
+            matchTickets(ticketOneImg, ticketTwoImg);
+            } 
+        }
+
+        function matchTickets(img1, img2) {
+            if (img1 === img2) {
+                matchTicket++;
+                if (matchTicket == 8) {
+                    setTimeout(() => {
+                        shuffleTicket();
+                    }, 1500);
+                }
+                ticketOne.removeEventListener('click', flipTicket);
+                ticketTwo.removeEventListener('click', flipTicket);
+
+                ticketOne = ticketTwo = '';
+                return (disableDeck = false);
+            }
+
+        setTimeout(() => {
+            ticketOne.classList.add('shake');
+            ticketTwo.classList.add('shake');
+        }, 400);
+
+        setTimeout(() => {
+            ticketOne.classList.remove('flip', 'shake');
+            ticketTwo.classList.remove('flip', 'shake');
+
+            ticketOne = ticketTwo = '';
+            disableDeck = false;
+        }, 1200);
+        }
+
+
+        function shuffleTicket() {
+            matchTicket = 0;
+            ticketOne = ticketTwo = '';
+            disableDeck = false;
+
+            let arr = [1, 40, 3, 4, 5, 6, 7, 8, 1, 40, 3, 4, 5, 6, 7, 8];
+            arr.sort(() => (Math.random() > 0.5 ? 1 : -1));
+
+            tickets.forEach((ticket, i) => {
+                ticket.classList.remove('flip');
+
+                let imgTag = ticket.querySelector('.back-view img')
+                imgTag.src = `img ${arr[i]}.jpg`;
+
+    ticket.addEventListener('click', flipTicket);
+});
+        }
+
+        shuffleTicket()   
+
+tickets.forEach((ticket) => {
+
+    ticket.addEventListener('click', flipTicket);
+});
+
+
+var open = [];
+var toMatche = 0;
+var moveCounter = 0;
+var numStars = 3;
+var timer = {
+    seconds: 0,
+    minutes: 0,
+    clearTime: -1
+};
+
+
+//Start timer
+
+var startTimer = function () {
+    if(timer.scounds === 59) {
+        timer.minutes++;
+        timer.seconds = 0;
+    }
+}
+    </script>
+</body>
+</html>
