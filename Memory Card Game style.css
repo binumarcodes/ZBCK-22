@@ -84,7 +84,7 @@ body {
 
 #loadig-screen p {
     position: absolute;
-    bottom: 5%;
+    bottom: 15%;
     left: 50%;
     transform: translatex(-50%);
     font-size: 12px;
