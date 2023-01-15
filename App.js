@@ -70,9 +70,9 @@ var time = setTimeout(function() {
 }, 40000);
 
 bell.onclick = function() {
-    notfBtn.style.transform = "scale(1)";
-    notfBtn.style.top = "40%";
-    notfBtn.style.right = "5%";
+    notfBtn.style.top = "50%";
+    notfBtn.style.left = "50%";
+    notfBtn.style.transform = "translate(-50%, -50%)";
     bell.style.opacity = "0";
 }
 
