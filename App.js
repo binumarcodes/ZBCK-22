@@ -3,9 +3,9 @@
 const preLoader = document.getElementById("loadig-screen");
 
 
-window.addEventListener('load', () => {
-    preLoader.style.display = "none";
-});
+// window.addEventListener('load', () => {
+//     preLoader.style.display = "none";
+// });
 
 
 //HarmBurger
