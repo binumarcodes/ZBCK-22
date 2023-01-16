@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Promt Day</title>
     <link rel="stylesheet" href="Graduation Day style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
 </head>
@@ -110,6 +111,7 @@
                 <img src="Grad 12.JPG" />
             </div>
             
+
             <div class="content-img">
                 <img src="BRANDME FLAYER.PNG" />
                 <div class="social-links">
@@ -209,14 +211,51 @@
                 <img src="Grad 29.JPG" />
             </div>
 
-            <div class="Brandme-Video">
-                <video src="BRANDME Video.mp4" controls></video>
-                 <div class="social-links">
-                    <i class="fa fa-instagram"><a href="#"></a></i>
-                    <a href="https://wa.me/+2348108005192"><i class="fa fa-whatsapp"></i></a>
-                    <i class="fa fa-twitter"><a href="#"></a></i>
-                </div>
-            </div>
+                        
+    <section id="mentors">
+
+        <h3>We Print, <span> We Customize</span></h3>
+
+        <!-- Slider main container -->
+<div class="swiper">
+<!-- Additional required wrapper -->
+<div class="swiper-wrapper">
+  <!-- Slides -->
+  <div class="swiper-slide"><img src="Prod 1.PNG"></div>
+  <div class="swiper-slide"><img src="Prod 2.JPG"></div>
+  <div class="swiper-slide"><img src="Prod 3.PnG"></div>
+  <div class="swiper-slide"><img src="Prod 4.JPG"></div>
+  <div class="swiper-slide"><img src="Prod 5.JPG"></div>
+  <div class="swiper-slide"><img src="Prod 6.JPG"></div>
+  <div class="swiper-slide"><img src="Prod 7.PNG"></div>
+  <div class="swiper-slide"><img src="Prod 8.PNG"></div>
+  <div class="swiper-slide"><img src="Prod 9.PNG"></div>
+  <div class="swiper-slide"><img src="Prod 10.JPG"></div>
+  
+</div>
+<!-- If we need pagination -->
+<div class="swiper-pagination"></div>
+
+<!-- If we need navigation buttons -->
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+
+</div>
+
+<div class="social-links">
+    <i class="fa fa-instagram"><a href="#"></a></i>
+    <a href="https://wa.me/+2348108005192"><i class="fa fa-whatsapp"></i></a>
+    <i class="fa fa-twitter"><a href="#"></a></i>
+    </div>
+
+    </section>
+  <div class="swiper-links">
+    <div class="social-links">
+        <i class="fa fa-instagram"><a href="#"></a></i>
+        <a href="https://wa.me/+2348108005192"><i class="fa fa-whatsapp"></i></a>
+        <i class="fa fa-twitter"><a href="#"></a></i>
+        </div>
+    </div>
             
             <div class="content-img">
                 <img src="Grad 33.JPG" />
@@ -269,6 +308,33 @@
 
     
 <script src="App.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<script>
+    const swiper = new Swiper('.swiper', {
+// Optional parameters
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+    },
+loop: true,
+
+// If we need pagination
+pagination: {
+el: '.swiper-pagination',
+clickable: true,
+},
+
+// Navigation arrows
+navigation: {
+nextEl: '.swiper-button-next',
+prevEl: '.swiper-button-prev',
+},
+
+
+});
+</script>
 
 </body>
 </html>

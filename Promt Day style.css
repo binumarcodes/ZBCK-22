@@ -219,6 +219,18 @@
     overflow: hidden;
 }
 
+#mentors h3 {
+ text-align: center;
+ font-family: "Kaushan Script", sans-serif;
+ padding: 10px 0;
+ color: navy;
+}
+
+#mentors h3 span {
+ color: rgb(255, 208, 0);
+ font-family: "Kaushan Script", sans-serif;
+}
+
 
 
 .swiper {
@@ -234,6 +246,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: -130px;
 }
 
 .swiper .swiper-button-prev, .swiper .swiper-button-next {
@@ -242,7 +255,7 @@
 
 .swiper .swiper-pagination {
     position: absolute;
-    bottom: 10%;
+    bottom: 30%;
     left: 50%;
 }
 
@@ -259,4 +272,3 @@
         width: 80%;
     }
 }
-
